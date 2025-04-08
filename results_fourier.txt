@@ -1,0 +1,740 @@
+seq_len:96, pre_len:96
+data:ECG, batch_size:2, embed_size:128, hidden_size:512
+Test Loss: 0.0092, MAPE: 13.6381%, MAE: 0.0631, RMSE: 0.0958
+
+seq_len:48, pre_len:96
+data:ECG, batch_size:2, embed_size:128, hidden_size:512
+Test Loss: 0.0101, MAPE: 14.2725%, MAE: 0.0671, RMSE: 0.1007
+
+seq_len:96, pre_len:96
+data:ECG, batch_size:2, embed_size:128, hidden_size:256
+Test Loss: 0.0111, MAPE: 14.9910%, MAE: 0.0712, RMSE: 0.1052
+
+seq_len:96, pre_len:48
+data:ECG, batch_size:2, embed_size:128, hidden_size:512
+Test Loss: 0.0087, MAPE: 13.2488%, MAE: 0.0616, RMSE: 0.0933
+
+seq_len:96, pre_len:96
+data:ECG, batch_size:2, embed_size:256, hidden_size:512
+Test Loss: 0.0118, MAPE: 14.9120%, MAE: 0.0707, RMSE: 0.1087
+
+seq_len:96, pre_len:96
+data:ECG, batch_size:32, embed_size:128, hidden_size:512
+Test Loss: 0.0141, MAPE: 18.9628%, MAE: 0.0814, RMSE: 0.1185
+
+
+
+
+seq_len:96, pre_len:96
+data:solar, batch_size:2, embed_size:128, hidden_size:512
+Test Loss: 0.0392, MAPE: 100.6555%, MAE: 0.1452, RMSE: 0.1981
+
+seq_len:48, pre_len:96
+data:solar, batch_size:2, embed_size:128, hidden_size:512
+Test Loss: 0.0327, MAPE: 97.0910%, MAE: 0.1314, RMSE: 0.1810
+
+seq_len:48, pre_len:96
+data:solar, batch_size:32, embed_size:128, hidden_size:512
+Test Loss: 0.0484, MAPE: 102.7427%, MAE: 0.1575, RMSE: 0.2201
+
+seq_len:48, pre_len:96
+data:solar, batch_size:32, embed_size:256, hidden_size:512
+Test Loss: 0.1628, MAPE: 128.1959%, MAE: 0.3182, RMSE: 0.4035
+
+seq_len:48, pre_len:96
+data:solar, batch_size:2, embed_size:256, hidden_size:512
+Test Loss: 0.0349, MAPE: 98.1653%, MAE: 0.1354, RMSE: 0.1868
+
+
+
+
+seq_len:96, pre_len:96
+data:metr, batch_size:2, embed_size:256, hidden_size:512
+Test Loss: 0.0778, MAPE: 80.5906%, MAE: 0.1863, RMSE: 0.2789
+
+seq_len:96, pre_len:96
+data:metr, batch_size:2, embed_size:128, hidden_size:512
+Test Loss: 0.0874, MAPE: 79.8135%, MAE: 0.1912, RMSE: 0.2956
+
+seq_len:48, pre_len:96
+data:metr, batch_size:2, embed_size:256, hidden_size:512
+Test Loss: 0.0817, MAPE: 78.9674%, MAE: 0.1793, RMSE: 0.2859
+
+seq_len:96, pre_len:96
+data:metr, batch_size:2, embed_size:256, hidden_size:512
+Test Loss: 0.0778, MAPE: 80.5906%, MAE: 0.1863, RMSE: 0.2789
+
+
+
+
+seq_len:48, pre_len:96
+data:traffic, batch_size:2, embed_size:128, hidden_size:512
+Test Loss: 0.0054, MAPE: 52.1287%, MAE: 0.0412, RMSE: 0.0736
+
+seq_len:96, pre_len:96
+data:traffic, batch_size:2, embed_size:128, hidden_size:512
+Test Loss: 0.0055, MAPE: 53.4183%, MAE: 0.0414, RMSE: 0.0741
+
+seq_len:48, pre_len:96
+data:traffic, batch_size:2, embed_size:256, hidden_size:512
+Test Loss: 0.0055, MAPE: 53.2323%, MAE: 0.0417, RMSE: 0.0739
+
+seq_len:96, pre_len:96
+data:traffic, batch_size:2, embed_size:256, hidden_size:512
+Test Loss: 0.0052, MAPE: 51.4443%, MAE: 0.0402, RMSE: 0.0724
+
+
+
+
+seq_len:48, pre_len:96
+data:weather, batch_size:2, embed_size:128, hidden_size:512
+Test Loss: 0.0118, MAPE: 110.2621%, MAE: 0.0573, RMSE: 0.1086
+
+seq_len:96, pre_len:96
+data:weather, batch_size:2, embed_size:128, hidden_size:512
+Test Loss: 0.0067, MAPE: 104.8804%, MAE: 0.0461, RMSE: 0.0818
+
+seq_len:48, pre_len:96
+data:weather, batch_size:2, embed_size:256, hidden_size:512
+Test Loss: 0.0089, MAPE: 111.6693%, MAE: 0.0585, RMSE: 0.0945
+
+seq_len:96, pre_len:96
+data:weather, batch_size:2, embed_size:256, hidden_size:512
+Test Loss: 0.0085, MAPE: 107.0858%, MAE: 0.0516, RMSE: 0.0920
+
+
+
+seq_len:48, pre_len:96
+data:electricity, batch_size:2, embed_size:128, hidden_size:512
+Test Loss: 0.0080, MAPE: 24.7401%, MAE: 0.0581, RMSE: 0.0893
+
+seq_len:96, pre_len:96
+data:electricity, batch_size:2, embed_size:128, hidden_size:512
+Test Loss: 0.0066, MAPE: 24.3393%, MAE: 0.0573, RMSE: 0.0815
+
+seq_len:48, pre_len:96
+data:electricity, batch_size:2, embed_size:256, hidden_size:512
+Test Loss: 0.0065, MAPE: 24.3639%, MAE: 0.0562, RMSE: 0.0808
+
+seq_len:96, pre_len:96
+data:electricity, batch_size:2, embed_size:256, hidden_size:512
+Test Loss: 0.0064, MAPE: 24.4144%, MAE: 0.0561, RMSE: 0.0797
+
+
+
+seq_len:96, pre_len:192
+data:traffic, batch_size:2, embed_size:256, hidden_size:512
+Test Loss: 0.0053, MAPE: 52.1332%, MAE: 0.0406, RMSE: 0.0726
+
+seq_len:96, pre_len:336
+data:traffic, batch_size:2, embed_size:256, hidden_size:512
+Test Loss: 0.0053, MAPE: 51.4411%, MAE: 0.0406, RMSE: 0.0727
+
+seq_len:96, pre_len:720
+data:traffic, batch_size:2, embed_size:256, hidden_size:512
+Test Loss: 0.0054, MAPE: 52.5689%, MAE: 0.0413, RMSE: 0.0733
+
+
+
+
+seq_len:96, pre_len:192
+data:metr, batch_size:2, embed_size:256, hidden_size:512
+Test Loss: 0.0884, MAPE: 81.7548%, MAE: 0.1999, RMSE: 0.2974
+
+seq_len:96, pre_len:336
+data:metr, batch_size:2, embed_size:256, hidden_size:512
+Test Loss: 0.0999, MAPE: 82.9357%, MAE: 0.2056, RMSE: 0.3161
+
+seq_len:96, pre_len:720
+data:metr, batch_size:2, embed_size:256, hidden_size:512
+Test Loss: 0.1009, MAPE: 86.0818%, MAE: 0.2233, RMSE: 0.3176
+
+
+
+
+seq_len:96, pre_len:192
+data:electricity, batch_size:2, embed_size:256, hidden_size:512
+Test Loss: 0.0067, MAPE: 25.2941%, MAE: 0.0578, RMSE: 0.0818
+
+seq_len:96, pre_len:336
+data:electricity, batch_size:2, embed_size:256, hidden_size:512
+Test Loss: 0.0068, MAPE: 25.4619%, MAE: 0.0585, RMSE: 0.0822
+
+seq_len:96, pre_len:720
+data:electricity, batch_size:2, embed_size:256, hidden_size:512
+Test Loss: 0.0075, MAPE: 26.9952%, MAE: 0.0617, RMSE: 0.0866
+
+
+
+
+seq_len:96, pre_len:96
+data:PeMS07, batch_size:2, embed_size:256, hidden_size:512
+Test Loss: 0.0172, MAPE: 19.4974%, MAE: 0.0852, RMSE: 0.1310
+
+seq_len:96, pre_len:192
+data:PeMS07, batch_size:2, embed_size:256, hidden_size:512
+Test Loss: 0.0156, MAPE: 19.6364%, MAE: 0.0838, RMSE: 0.1251
+
+seq_len:96, pre_len:336
+data:PeMS07, batch_size:2, embed_size:256, hidden_size:512
+Test Loss: 0.0155, MAPE: 19.8224%, MAE: 0.0821, RMSE: 0.1245
+
+seq_len:96, pre_len:720
+data:PeMS07, batch_size:2, embed_size:256, hidden_size:512
+Test Loss: 0.0157, MAPE: 19.6706%, MAE: 0.0826, RMSE: 0.1252
+
+
+
+
+seq_len:96, pre_len:96
+data:weather, batch_size:32, embed_size:128, hidden_size:512
+Test Loss: 0.0069, MAPE: 107.0405%, MAE: 0.0489, RMSE: 0.0830
+
+seq_len:96, pre_len:96
+data:weather, batch_size:32, embed_size:128, hidden_size:512
+Test Loss: 0.0068, MAPE: 106.6380%, MAE: 0.0497, RMSE: 0.0824
+
+seq_len:96, pre_len:96
+data:weather, batch_size:32, embed_size:64, hidden_size:512
+Test Loss: 0.0065, MAPE: 106.3468%, MAE: 0.0482, RMSE: 0.0804
+
+seq_len:96, pre_len:96
+data:weather, batch_size:32, embed_size:32, hidden_size:512
+Test Loss: 0.0061, MAPE: 106.5292%, MAE: 0.0474, RMSE: 0.0785
+
+
+
+
+seq_len:96, pre_len:96
+data:Flight, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0153, MAPE: 103.7669%, MAE: 0.0893, RMSE: 0.1236
+
+seq_len:96, pre_len:96
+data:Flight, batch_size:32, embed_size:256, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0168, MAPE: 105.0937%, MAE: 0.0937, RMSE: 0.1297
+
+
+
+
+
+seq_len:96, pre_len:96
+data:weather, batch_size:32, embed_size:32, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0061, MAPE: 106.5292%, MAE: 0.0474, RMSE: 0.0785
+
+seq_len:96, pre_len:192
+data:weather, batch_size:32, embed_size:32, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0081, MAPE: 110.4553%, MAE: 0.0566, RMSE: 0.0902
+
+seq_len:96, pre_len:336
+data:weather, batch_size:32, embed_size:32, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0092, MAPE: 111.6923%, MAE: 0.0599, RMSE: 0.0958
+
+seq_len:96, pre_len:720
+data:weather, batch_size:32, embed_size:32, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0121, MAPE: 116.8496%, MAE: 0.0716, RMSE: 0.1098
+
+
+
+
+seq_len:96, pre_len:96
+data:exchange, batch_size:2, embed_size:16, hidden_size:512, feature_blocks:8, window_size:16
+Test Loss: 0.0214, MAPE: 28.7050%, MAE: 0.1227, RMSE: 0.1464
+
+seq_len:96, pre_len:192
+data:exchange, batch_size:2, embed_size:16, hidden_size:512, feature_blocks:8, window_size:16
+Test Loss: 0.0343, MAPE: 33.0275%, MAE: 0.1549, RMSE: 0.1853
+
+seq_len:96, pre_len:336
+data:exchange, batch_size:2, embed_size:16, hidden_size:512, feature_blocks:8, window_size:16
+Test Loss: 0.0484, MAPE: 36.3308%, MAE: 0.1807, RMSE: 0.2201
+
+seq_len:96, pre_len:720
+data:exchange, batch_size:2, embed_size:16, hidden_size:512, feature_blocks:8, window_size:16
+Test Loss: 0.0825, MAPE: 42.0279%, MAE: 0.2368, RMSE: 0.2872
+
+
+
+
+seq_len:96, pre_len:96
+data:exchange, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0202, MAPE: 27.0256%, MAE: 0.1144, RMSE: 0.1416
+
+seq_len:96, pre_len:192
+data:exchange, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0240, MAPE: 29.5612%, MAE: 0.1272, RMSE: 0.1545
+
+seq_len:96, pre_len:336
+data:exchange, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0402, MAPE: 34.5556%, MAE: 0.1681, RMSE: 0.2005
+
+seq_len:96, pre_len:720
+data:exchange, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0568, MAPE: 35.7747%, MAE: 0.1980, RMSE: 0.2392
+
+
+
+
+seq_len:96, pre_len:96
+data:exchange, batch_size:32, embed_size:32, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0243, MAPE: 32.3154%, MAE: 0.1326, RMSE: 0.1555
+
+seq_len:96, pre_len:192
+data:exchange, batch_size:32, embed_size:32, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0395, MAPE: 36.4089%, MAE: 0.1690, RMSE: 0.1987
+
+seq_len:96, pre_len:336
+data:exchange, batch_size:32, embed_size:32, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0481, MAPE: 39.5656%, MAE: 0.1865, RMSE: 0.2193
+
+seq_len:96, pre_len:720
+data:exchange, batch_size:32, embed_size:32, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0437, MAPE: 31.6651%, MAE: 0.1752, RMSE: 0.2094
+
+
+
+
+seq_len:96, pre_len:96
+data:exchange, batch_size:32, embed_size:16, hidden_size:512, feature_blocks:8, window_size:16
+Test Loss: 0.0214, MAPE: 28.5600%, MAE: 0.1218, RMSE: 0.1461
+
+seq_len:96, pre_len:192
+data:exchange, batch_size:32, embed_size:16, hidden_size:512, feature_blocks:8, window_size:16
+Test Loss: 0.0378, MAPE: 34.5717%, MAE: 0.1617, RMSE: 0.1945
+
+seq_len:96, pre_len:336
+data:exchange, batch_size:32, embed_size:16, hidden_size:512, feature_blocks:8, window_size:16
+Test Loss: 0.0441, MAPE: 34.4785%, MAE: 0.1715, RMSE: 0.2100
+
+seq_len:96, pre_len:720
+data:exchange, batch_size:32, embed_size:16, hidden_size:512, feature_blocks:8, window_size:16
+Test Loss: 0.0562, MAPE: 34.3196%, MAE: 0.1966, RMSE: 0.2377
+
+
+
+
+seq_len:96, pre_len:96
+data:exchange, batch_size:32, embed_size:32, hidden_size:512, feature_blocks:8, window_size:16
+Test Loss: 0.0283, MAPE: 32.7656%, MAE: 0.1418, RMSE: 0.1680
+
+seq_len:96, pre_len:192
+data:exchange, batch_size:32, embed_size:32, hidden_size:512, feature_blocks:8, window_size:16
+Test Loss: 0.0468, MAPE: 39.2209%, MAE: 0.1800, RMSE: 0.2158
+
+seq_len:96, pre_len:336
+data:exchange, batch_size:32, embed_size:32, hidden_size:512, feature_blocks:8, window_size:16
+Test Loss: 0.0475, MAPE: 37.4550%, MAE: 0.1834, RMSE: 0.2180
+
+seq_len:96, pre_len:720
+data:exchange, batch_size:32, embed_size:32, hidden_size:512, feature_blocks:8, window_size:16
+Test Loss: 0.0417, MAPE: 30.8050%, MAE: 0.1704, RMSE: 0.2044
+
+
+
+
+seq_len:96, pre_len:96
+data:exchange, batch_size:2, embed_size:16, hidden_size:512, feature_blocks:8, window_size:16
+Test Loss: 0.0214, MAPE: 28.7050%, MAE: 0.1227, RMSE: 0.1464
+
+seq_len:96, pre_len:192
+data:exchange, batch_size:2, embed_size:16, hidden_size:512, feature_blocks:8, window_size:16
+Test Loss: 0.0343, MAPE: 33.0275%, MAE: 0.1549, RMSE: 0.1853
+
+seq_len:96, pre_len:336
+data:exchange, batch_size:2, embed_size:16, hidden_size:512, feature_blocks:8, window_size:16
+Test Loss: 0.0484, MAPE: 36.3308%, MAE: 0.1807, RMSE: 0.2201
+
+seq_len:96, pre_len:720
+data:exchange, batch_size:2, embed_size:16, hidden_size:512, feature_blocks:8, window_size:16
+Test Loss: 0.0825, MAPE: 42.0279%, MAE: 0.2368, RMSE: 0.2872
+
+
+
+
+seq_len:96, pre_len:96
+data:exchange, batch_size:32, embed_size:32, hidden_size:512, feature_blocks:8, window_size:8
+Test Loss: 0.0245, MAPE: 32.1581%, MAE: 0.1316, RMSE: 0.1558
+
+seq_len:96, pre_len:192
+data:exchange, batch_size:32, embed_size:32, hidden_size:512, feature_blocks:8, window_size:8
+Test Loss: 0.0329, MAPE: 36.2463%, MAE: 0.1504, RMSE: 0.1808
+
+seq_len:96, pre_len:336
+data:exchange, batch_size:32, embed_size:32, hidden_size:512, feature_blocks:8, window_size:8
+Test Loss: 0.0429, MAPE: 37.2059%, MAE: 0.1733, RMSE: 0.2071
+
+seq_len:96, pre_len:720
+data:exchange, batch_size:32, embed_size:32, hidden_size:512, feature_blocks:8, window_size:8
+Test Loss: 0.0393, MAPE: 32.7649%, MAE: 0.1649, RMSE: 0.1979
+
+
+
+seq_len:96, pre_len:96
+data:exchange, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:8, window_size:8
+Test Loss: 0.0209, MAPE: 26.6066%, MAE: 0.1144, RMSE: 0.1440
+
+seq_len:96, pre_len:192
+data:exchange, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:8, window_size:8
+Test Loss: 0.0252, MAPE: 28.9283%, MAE: 0.1274, RMSE: 0.1587
+
+seq_len:96, pre_len:336
+data:exchange, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:8, window_size:8
+Test Loss: 0.0347, MAPE: 33.4459%, MAE: 0.1533, RMSE: 0.1862
+
+seq_len:96, pre_len:720
+data:exchange, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:8, window_size:8
+Test Loss: 0.0433, MAPE: 32.3068%, MAE: 0.1732, RMSE: 0.2086
+
+
+
+
+
+seq_len:96, pre_len:96
+data:weather, batch_size:32, embed_size:16, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0065, MAPE: 106.5973%, MAE: 0.0479, RMSE: 0.0806
+
+seq_len:96, pre_len:192
+data:weather, batch_size:32, embed_size:16, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0082, MAPE: 110.3350%, MAE: 0.0559, RMSE: 0.0905
+
+seq_len:96, pre_len:336
+data:weather, batch_size:32, embed_size:16, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0094, MAPE: 112.3998%, MAE: 0.0608, RMSE: 0.0970
+
+seq_len:96, pre_len:720
+data:weather, batch_size:32, embed_size:16, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0126, MAPE: 118.2862%, MAE: 0.0731, RMSE: 0.1123
+
+
+
+seq_len:96, pre_len:96
+data:exchange, batch_size:32, embed_size:256, hidden_size:512, feature_blocks:8, window_size:8
+Test Loss: 0.0274, MAPE: 31.4105%, MAE: 0.1384, RMSE: 0.1647
+
+seq_len:96, pre_len:192
+data:exchange, batch_size:32, embed_size:256, hidden_size:512, feature_blocks:8, window_size:8
+Test Loss: 0.0320, MAPE: 33.0089%, MAE: 0.1487, RMSE: 0.1788
+
+seq_len:96, pre_len:336
+data:exchange, batch_size:32, embed_size:256, hidden_size:512, feature_blocks:8, window_size:8
+Test Loss: 0.0427, MAPE: 37.1103%, MAE: 0.1759, RMSE: 0.2066
+
+seq_len:96, pre_len:720
+data:exchange, batch_size:32, embed_size:256, hidden_size:512, feature_blocks:8, window_size:8
+Test Loss: 0.0474, MAPE: 34.8532%, MAE: 0.1828, RMSE: 0.2180
+
+
+
+
+seq_len:96, pre_len:96
+data:exchange, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:4, window_size:4
+Test Loss: 0.0246, MAPE: 28.5186%, MAE: 0.1259, RMSE: 0.1564
+
+seq_len:96, pre_len:192
+data:exchange, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:4, window_size:4
+Test Loss: 0.0531, MAPE: 38.8457%, MAE: 0.1893, RMSE: 0.2307
+
+seq_len:96, pre_len:336
+data:exchange, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:4, window_size:4
+Test Loss: 0.0554, MAPE: 37.7166%, MAE: 0.1943, RMSE: 0.2354
+
+
+seq_len:96, pre_len:720
+data:exchange, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:4, window_size:4
+Test Loss: 0.0630, MAPE: 37.0041%, MAE: 0.2057, RMSE: 0.2517
+
+
+
+seq_len:96, pre_len:96
+data:exchange, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:16, window_size:8
+Test Loss: 0.0223, MAPE: 28.5192%, MAE: 0.1266, RMSE: 0.1489
+
+seq_len:96, pre_len:192
+data:exchange, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:16, window_size:8
+Test Loss: 0.0311, MAPE: 30.1388%, MAE: 0.1471, RMSE: 0.1763
+
+seq_len:96, pre_len:336
+data:exchange, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:16, window_size:8
+Test Loss: 0.0373, MAPE: 31.5086%, MAE: 0.1584, RMSE: 0.1931
+
+seq_len:96, pre_len:720
+data:exchange, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:16, window_size:8
+Test Loss: 0.0675, MAPE: 38.0837%, MAE: 0.2211, RMSE: 0.2607
+
+
+
+
+
+seq_len:96, pre_len:96
+data:exchange, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:8, window_size:8
+Test Loss: 0.0209, MAPE: 26.6066%, MAE: 0.1144, RMSE: 0.1440
+
+seq_len:96, pre_len:192
+data:exchange, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:8, window_size:8
+Test Loss: 0.0252, MAPE: 28.9283%, MAE: 0.1274, RMSE: 0.1587
+
+seq_len:96, pre_len:336
+data:exchange, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:8, window_size:8
+Test Loss: 0.0347, MAPE: 33.4459%, MAE: 0.1533, RMSE: 0.1862
+
+seq_len:96, pre_len:720
+data:exchange, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:8, window_size:8
+Test Loss: 0.0433, MAPE: 32.3068%, MAE: 0.1732, RMSE: 0.2086
+
+
+
+
+seq_len:96, pre_len:96
+data:electricity, batch_size:2, embed_size:256, hidden_size:1024
+Test Loss: 0.0063, MAPE: 24.0800%, MAE: 0.0558, RMSE: 0.0793
+
+seq_len:96, pre_len:192
+data:electricity, batch_size:2, embed_size:256, hidden_size:1024, feature_blocks:8, window_size:32
+Test Loss: 0.0063, MAPE: 24.1364%, MAE: 0.0557, RMSE: 0.0791
+
+seq_len:96, pre_len:336
+data:electricity, batch_size:2, embed_size:256, hidden_size:1024, feature_blocks:8, window_size:32
+Test Loss: 0.0063, MAPE: 24.1418%, MAE: 0.0558, RMSE: 0.0792
+
+seq_len:96, pre_len:720
+data:electricity, batch_size:2, embed_size:256, hidden_size:1024, feature_blocks:8, window_size:32
+Test Loss: 0.0065, MAPE: 24.3406%, MAE: 0.0566, RMSE: 0.0809
+
+
+
+
+
+
+seq_len:96, pre_len:96
+data:weather, batch_size:2, embed_size:32, hidden_size:512
+Test Loss: 0.0066, MAPE: 106.1483%, MAE: 0.0477, RMSE: 0.0815
+
+seq_len:96, pre_len:192
+data:weather, batch_size:2, embed_size:32, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0074, MAPE: 109.3836%, MAE: 0.0531, RMSE: 0.0861
+
+seq_len:96, pre_len:336
+data:weather, batch_size:2, embed_size:32, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0109, MAPE: 115.1688%, MAE: 0.0653, RMSE: 0.1045
+
+seq_len:96, pre_len:720
+data:weather, batch_size:2, embed_size:32, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0120, MAPE: 116.3300%, MAE: 0.0705, RMSE: 0.1096
+
+
+
+seq_len:96, pre_len:96
+data:Flight, batch_size:2, embed_size:128, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0126, MAPE: 99.2049%, MAE: 0.0798, RMSE: 0.1121
+
+seq_len:96, pre_len:192
+data:Flight, batch_size:2, embed_size:128, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0138, MAPE: 99.4154%, MAE: 0.0837, RMSE: 0.1174
+
+seq_len:96, pre_len:336
+data:Flight, batch_size:2, embed_size:128, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0162, MAPE: 101.2999%, MAE: 0.0915, RMSE: 0.1273
+
+seq_len:96, pre_len:720
+data:Flight, batch_size:2, embed_size:128, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0216, MAPE: 107.7416%, MAE: 0.1062, RMSE: 0.1471
+
+
+
+seq_len:96, pre_len:96
+data:Flight, batch_size:2, embed_size:64, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0125, MAPE: 98.4090%, MAE: 0.0800, RMSE: 0.1120
+
+
+seq_len:96, pre_len:192
+data:Flight, batch_size:2, embed_size:64, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0138, MAPE: 99.3052%, MAE: 0.0841, RMSE: 0.1176
+
+seq_len:96, pre_len:336
+data:Flight, batch_size:2, embed_size:64, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0184, MAPE: 103.7939%, MAE: 0.0993, RMSE: 0.1356
+
+seq_len:96, pre_len:720
+data:Flight, batch_size:2, embed_size:64, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0279, MAPE: 113.7849%, MAE: 0.1239, RMSE: 0.1671
+
+
+
+
+seq_len:96, pre_len:96
+data:Flight, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:16, window_size:32
+Test Loss: 0.0152, MAPE: 102.7786%, MAE: 0.0888, RMSE: 0.1233
+
+seq_len:96, pre_len:192
+data:Flight, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:16, window_size:32
+Test Loss: 0.0160, MAPE: 103.5532%, MAE: 0.0911, RMSE: 0.1267
+
+seq_len:96, pre_len:336
+data:Flight, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:16, window_size:32
+Test Loss: 0.0175, MAPE: 104.5418%, MAE: 0.0950, RMSE: 0.1322
+
+
+seq_len:96, pre_len:720
+data:Flight, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:16, window_size:32
+Test Loss: 0.0233, MAPE: 109.4436%, MAE: 0.1101, RMSE: 0.1525
+
+
+
+
+seq_len:96, pre_len:96
+data:Flight, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0153, MAPE: 103.7669%, MAE: 0.0893, RMSE: 0.1236
+
+
+seq_len:96, pre_len:192
+data:Flight, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0182, MAPE: 106.8033%, MAE: 0.0980, RMSE: 0.1350
+
+seq_len:96, pre_len:336
+data:Flight, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0200, MAPE: 107.6351%, MAE: 0.1017, RMSE: 0.1413
+
+seq_len:96, pre_len:720
+data:Flight, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0252, MAPE: 112.7177%, MAE: 0.1138, RMSE: 0.1587
+
+
+
+
+seq_len:96, pre_len:96
+data:Flight, batch_size:2, embed_size:128, hidden_size:512, feature_blocks:8, window_size:16
+Test Loss: 0.0154, MAPE: 101.9421%, MAE: 0.0857, RMSE: 0.1240
+
+seq_len:96, pre_len:192
+data:Flight, batch_size:2, embed_size:128, hidden_size:512, feature_blocks:8, window_size:16
+Test Loss: 0.0138, MAPE: 101.6976%, MAE: 0.0839, RMSE: 0.1175
+
+seq_len:96, pre_len:336
+data:Flight, batch_size:2, embed_size:128, hidden_size:512, feature_blocks:8, window_size:16
+Test Loss: 0.0158, MAPE: 101.0335%, MAE: 0.0902, RMSE: 0.1257
+
+seq_len:96, pre_len:720
+data:Flight, batch_size:2, embed_size:128, hidden_size:512, feature_blocks:8, window_size:16
+Test Loss: 0.0201, MAPE: 104.2807%, MAE: 0.1017, RMSE: 0.1419
+
+
+
+seq_len:96, pre_len:96
+data:Flight, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0136, MAPE: 101.9465%, MAE: 0.0827, RMSE: 0.1168
+
+seq_len:96, pre_len:192
+data:Flight, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0199, MAPE: 106.0981%, MAE: 0.0959, RMSE: 0.1412
+
+seq_len:96, pre_len:336
+data:Flight, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0173, MAPE: 105.4446%, MAE: 0.0950, RMSE: 0.1316
+
+seq_len:96, pre_len:720
+data:Flight, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0224, MAPE: 106.5901%, MAE: 0.1067, RMSE: 0.1497
+
+
+
+
+seq_len:96, pre_len:96
+data:Flight, batch_size:2, embed_size:128, hidden_size:512, feature_blocks:16, window_size:32
+Test Loss: 0.0121, MAPE: 99.1499%, MAE: 0.0785, RMSE: 0.1100
+
+seq_len:96, pre_len:192
+data:Flight, batch_size:2, embed_size:128, hidden_size:512, feature_blocks:16, window_size:32
+Test Loss: 0.0137, MAPE: 99.8293%, MAE: 0.0837, RMSE: 0.1172
+
+seq_len:96, pre_len:336
+data:Flight, batch_size:2, embed_size:128, hidden_size:512, feature_blocks:16, window_size:32
+Test Loss: 0.0150, MAPE: 100.7862%, MAE: 0.0877, RMSE: 0.1226
+
+seq_len:96, pre_len:720
+data:Flight, batch_size:2, embed_size:128, hidden_size:512, feature_blocks:16, window_size:32
+Test Loss: 0.0214, MAPE: 103.3185%, MAE: 0.1043, RMSE: 0.1461
+
+
+
+
+
+seq_len:96, pre_len:96
+data:PeMS07, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:64
+Test Loss: 0.0179, MAPE: 19.5860%, MAE: 0.0857, RMSE: 0.1338
+
+seq_len:96, pre_len:192
+data:PeMS07, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:64
+Test Loss: 0.0157, MAPE: 19.5871%, MAE: 0.0842, RMSE: 0.1253
+
+seq_len:96, pre_len:336
+data:PeMS07, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:64
+Test Loss: 0.0154, MAPE: 19.4424%, MAE: 0.0819, RMSE: 0.1240
+
+seq_len:96, pre_len:720
+data:PeMS07, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:64
+Test Loss: 0.0154, MAPE: 19.6378%, MAE: 0.0813, RMSE: 0.1240
+
+
+
+
+seq_len:96, pre_len:96
+data:metr, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:64
+Test Loss: 0.0790, MAPE: 80.4703%, MAE: 0.1831, RMSE: 0.2811
+
+seq_len:96, pre_len:192
+data:metr, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:64
+Test Loss: 0.0922, MAPE: 81.8984%, MAE: 0.1967, RMSE: 0.3037
+
+seq_len:96, pre_len:336
+data:metr, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:64
+Test Loss: 0.0955, MAPE: 82.3767%, MAE: 0.2020, RMSE: 0.3090
+
+seq_len:96, pre_len:720
+data:metr, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:64
+Test Loss: 0.1009, MAPE: 86.1343%, MAE: 0.2239, RMSE: 0.3177
+
+
+
+seq_len:96, pre_len:96
+data:traffic, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:64
+Test Loss: 0.0052, MAPE: 51.8915%, MAE: 0.0403, RMSE: 0.0723
+
+
+
+
+
+seq_len:96, pre_len:96
+data:traffic, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:16
+Test Loss: 0.0053, MAPE: 52.1257%, MAE: 0.0405, RMSE: 0.0727
+
+
+
+
+
+seq_len:96, pre_len:96
+data:traffic, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:8
+Test Loss: 0.0053, MAPE: 52.1279%, MAE: 0.0406, RMSE: 0.0729
+
+seq_len:96, pre_len:192
+data:traffic, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:16
+Test Loss: 0.0054, MAPE: 51.8999%, MAE: 0.0409, RMSE: 0.0733
+
+seq_len:96, pre_len:192
+data:traffic, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:8
+Test Loss: 0.0054, MAPE: 53.4214%, MAE: 0.0415, RMSE: 0.0735
+
+seq_len:96, pre_len:336
+data:traffic, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:64
+Test Loss: 0.0063, MAPE: 58.5752%, MAE: 0.0466, RMSE: 0.0795
+
+seq_len:96, pre_len:96
+data:traffic, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:4
+Test Loss: 0.0052, MAPE: 51.9304%, MAE: 0.0402, RMSE: 0.0722
+
+seq_len:48, pre_len:336
+data:traffic, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:4
+Test Loss: 0.0055, MAPE: 52.3801%, MAE: 0.0416, RMSE: 0.0740
+
+seq_len:144, pre_len:336
+data:traffic, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:4
+Test Loss: 0.0052, MAPE: 50.1346%, MAE: 0.0400, RMSE: 0.0721
+
