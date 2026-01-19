@@ -5,7 +5,8 @@ echo "=============================================="
 echo "Training dataset: electricity"
 echo "=============================================="
 
-for pre_len in 96 192 336 720
+# for pre_len in 96 192 336 720
+for pre_len in 336
 do
     echo "--------------------------------------------------"
     echo "Training with pre_len=$pre_len "

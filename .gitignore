@@ -1,9 +1,18 @@
 data/
 noise_robustness/
-output/
 *.pth
 *.pt
 *.csv
+
+FourierSSM_v1.py
+
+PeMS07_seqlen.sh
+
+traffic_seqlen.sh
+
+exchange.sh
+
+noise_test.py
 
 __pycache__/
 *.pyc

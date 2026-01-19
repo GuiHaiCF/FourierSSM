@@ -9,7 +9,9 @@ import time
 import os
 import numpy as np
 import signal
-from model.FourierSSM_v1 import FourierSSM  
+from FourierSSM.model.FourierSSM import FourierSSM  
+
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 # 固定随机种子（保证可重复性）
 def set_seed(seed=42):
@@ -171,7 +173,7 @@ def main():
                     scheduler.step()
 
                 # ================= 验证阶段 =================
-                val_loss, val_mape, val_mae, val_rmse = evaluate(model, val_loader, criterion, device)
+                val_loss, val_mape, val_mae, val_rmse, val_smape = evaluate(model, val_loader, criterion, device)
                 
                 # 早停逻辑
                 if val_loss < best_loss:
@@ -184,7 +186,7 @@ def main():
                 # 打印日志
                 print(f'Epoch {epoch+1:03d} | Time: {time.time()-epoch_start:.1f}s | '
                       f'Train Loss: {train_loss/len(train_loader):.4f} | '
-                      f'Val Loss: {val_loss:.4f} | MAPE: {val_mape:.2%} | '
+                      f'Val Loss: {val_loss:.4f} | SMAPE: {val_smape:.2%} | '
                       f'MAE: {val_mae:.4f} | RMSE: {val_rmse:.4f}')
 
                 # 保存检查点
@@ -220,19 +222,32 @@ def main():
         print("\n=== Starting Final Test ===")
         model.load_state_dict(torch.load(best_model_path))
         test_loader = DataLoader(test_set, batch_size=args.batch_size, shuffle=False)
-        test_loss, test_mape, test_mae, test_rmse = evaluate(model, test_loader, criterion, device)
+        test_loss, test_mape, test_mae, test_rmse, test_smape = evaluate(model, test_loader, criterion, device)
         
         print(f"\nTest Results:")
-        print(f"Loss: {test_loss:.4f} | MAPE: {test_mape:.2%}")
+        print(f"Loss: {test_loss:.4f} | SMAPE: {test_smape:.4f}")
         print(f"MAE: {test_mae:.4f} | RMSE: {test_rmse:.4f}")
+
+        result_file = os.path.join("output", args.data, f"result_{args.data}.txt")
+        f = open(result_file, 'a')
+        f.write('=' * 80 + '\n')
+        f.write(f'Experiment Time: {time.strftime("%Y-%m-%d %H:%M:%S")}\n')
+        f.write('seq_len:{}, pre_len:{}\n'.format(args.seq_len, args.pre_len))
+        f.write('data:{}, batch_size:{}, embed_size:{}, hidden_size:{}, feature_blocks:{}\n'.format(args.data, args.batch_size, args.embed_size, args.hidden_size, args.feature_blocks))
+        f.write('Test Loss: {:.4f}, MAE: {:.4f}, RMSE: {:.4f}, MAPE: {:.4%}, SMAPE: {:.4f} '.format(test_loss, test_mae, test_rmse, test_mape, test_smape))
+        f.write('\n')
+        f.write('=' * 80 + '\n\n')
+        f.close()
+
+
         
-        # 保存结果
-        with open("results_fourier.txt", "a") as f:
-            f.write('seq_len:{}, pre_len:{}\n'.format(args.seq_len, args.pre_len))
-            f.write(f'data:{args.data}, batch_size:{args.batch_size}, embed_size:{args.embed_size}, hidden_size:{args.hidden_size}, feature_blocks:{args.feature_blocks}, window_size:{args.window_size}\n')
-            f.write(f'Test Loss: {test_loss:.4f}, MAPE: {test_mape:.4%}, MAE: {test_mae:.4f}, RMSE: {test_rmse:.4f}\n')
-            f.write('\n')
-            f.close()
+        # # 保存结果
+        # with open("results_fourier.txt", "a") as f:
+        #     f.write('seq_len:{}, pre_len:{}\n'.format(args.seq_len, args.pre_len))
+        #     f.write(f'data:{args.data}, batch_size:{args.batch_size}, embed_size:{args.embed_size}, hidden_size:{args.hidden_size}, feature_blocks:{args.feature_blocks}, window_size:{args.window_size}\n')
+        #     f.write(f'Test Loss: {test_loss:.4f}, MAPE: {test_mape:.4%}, MAE: {test_mae:.4f}, RMSE: {test_rmse:.4f}\n')
+        #     f.write('\n')
+        #     f.close()
 
     finally:
         # ================= 资源清理 =================
@@ -257,8 +272,8 @@ def evaluate(model, loader, criterion, device):
     # 指标计算
     preds = np.concatenate(preds, axis=0)
     trues = np.concatenate(trues, axis=0)
-    mape, mae, rmse = evaluate_metrics(trues, preds)
-    return loss_total/len(loader), mape, mae, rmse
+    mape, mae, rmse, smape = evaluate_metrics(trues, preds)
+    return loss_total/len(loader), mape, mae, rmse, smape
 
 if __name__ == '__main__':
     main()

@@ -32,6 +32,33 @@ do
 
 done
 
+# for pre_len in 44 144
+# do
+#     echo "--------------------------------------------------"
+#     echo "Training with pre_len=$pre_len "
+#     echo "--------------------------------------------------"
+    
+#     # 调用Python训练脚本并传递参数
+#     python main.py \
+#         --early_stop \
+#         --data "traffic" \
+#         --embed_size 256 \
+#         --hidden_size 512 \
+#         --seq_len 96 \
+#         --pre_len "$pre_len" \
+#         --batch_size 2 \
+#         --feature_blocks 8 \
+#         --window_size 4 \
+#         --stride 2 \
+#         --epochs 50 \
+#         --lr 1e-5 \
+#         --decay_step 5 \
+#         --decay_rate 0.5
+    
+#     echo "Completed: Traffic (pre_len=$pre_len )"
+
+# done
+
 echo "=============================================="
 echo "Finished all combinations for Traffic "
 echo "=============================================="

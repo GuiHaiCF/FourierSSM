@@ -738,3 +738,99 @@ seq_len:144, pre_len:336
 data:traffic, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:4
 Test Loss: 0.0052, MAPE: 50.1346%, MAE: 0.0400, RMSE: 0.0721
 
+seq_len:192, pre_len:336
+data:traffic, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:4
+Test Loss: 0.0053, MAPE: 50.6967%, MAE: 0.0405, RMSE: 0.0728
+
+seq_len:48, pre_len:336
+data:PeMS07, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0169, MAPE: 20.7990%, MAE: 0.0870, RMSE: 0.1300
+
+seq_len:144, pre_len:336
+data:PeMS07, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0143, MAPE: 18.3691%, MAE: 0.0768, RMSE: 0.1196
+
+seq_len:192, pre_len:336
+data:PeMS07, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0150, MAPE: 19.4879%, MAE: 0.0819, RMSE: 0.1224
+
+seq_len:48, pre_len:336
+data:traffic, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0060, MAPE: 52.1873%, MAE: 0.0421, RMSE: 0.0772
+
+seq_len:336, pre_len:336
+data:PeMS07, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0148, MAPE: 19.3537%, MAE: 0.0807, RMSE: 0.1216
+
+seq_len:144, pre_len:336
+data:traffic, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0052, MAPE: 49.6561%, MAE: 0.0398, RMSE: 0.0721
+
+seq_len:192, pre_len:336
+data:traffic, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0051, MAPE: 49.1952%, MAE: 0.0394, RMSE: 0.0716
+
+seq_len:336, pre_len:336
+data:traffic, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0051, MAPE: 49.2631%, MAE: 0.0394, RMSE: 0.0718
+
+seq_len:720, pre_len:336
+data:traffic, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0089, MAPE: 69.5093%, MAE: 0.0570, RMSE: 0.0944
+
+seq_len:96, pre_len:48
+data:weather, batch_size:32, embed_size:32, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0051, MAPE: 102.5677%, MAE: 0.0401, RMSE: 0.0712
+
+seq_len:96, pre_len:48
+data:PeMS07, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:64
+Test Loss: 0.0167, MAPE: 19.5086%, MAE: 0.0836, RMSE: 0.1291
+
+seq_len:96, pre_len:144
+data:weather, batch_size:32, embed_size:32, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.0068, MAPE: 107.3667%, MAE: 0.0503, RMSE: 0.0825
+
+seq_len:96, pre_len:48
+data:metr, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:64
+Test Loss: 0.0667, MAPE: 78.6461%, MAE: 0.1639, RMSE: 0.2583
+
+seq_len:96, pre_len:144
+data:PeMS07, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:64
+Test Loss: 0.0193, MAPE: 19.7942%, MAE: 0.0877, RMSE: 0.1389
+
+seq_len:96, pre_len:144
+data:metr, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:64
+Test Loss: 0.0868, MAPE: 81.8223%, MAE: 0.1947, RMSE: 0.2946
+
+seq_len:96, pre_len:48
+data:traffic, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:4
+Test Loss: 0.0051, MAPE: 51.7790%, MAE: 0.0400, RMSE: 0.0714
+
+seq_len:96, pre_len:144
+data:traffic, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:4
+Test Loss: 0.0053, MAPE: 52.6748%, MAE: 0.0407, RMSE: 0.0728
+
+seq_len:96, pre_len:144
+data:traffic, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:4
+Test Loss: 0.0053, MAPE: 52.6748%, MAE: 0.0407, RMSE: 0.0728
+
+seq_len:96, pre_len:96
+data:exchange, batch_size:32, embed_size:128, hidden_size:512, feature_blocks:8, window_size:32
+Test Loss: 0.3031, MAPE: 80.4544%, MAE: 0.4271, RMSE: 0.5520
+
+seq_len:96, pre_len:96
+data:traffic, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:4
+Test Loss: 0.0052, MAPE: 51.9304%, MAE: 0.0402, RMSE: 0.0722
+
+seq_len:96, pre_len:96
+data:metr, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:64
+Test Loss: 0.0790, MAPE: 80.4703%, MAE: 0.1831, RMSE: 0.2811
+
+seq_len:96, pre_len:192
+data:metr, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:64
+Test Loss: 0.0922, MAPE: 81.8984%, MAE: 0.1967, RMSE: 0.3037
+
+seq_len:96, pre_len:192
+data:traffic, batch_size:2, embed_size:256, hidden_size:512, feature_blocks:8, window_size:4
+Test Loss: 0.0053, MAPE: 51.9345%, MAE: 0.0406, RMSE: 0.0727
+
